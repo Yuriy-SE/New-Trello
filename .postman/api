@@ -5,7 +5,7 @@ id = 28b88ab8-a0b3-4d62-b2ac-8edbccfea54e
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"18096179-74bcd682-89fe-4f32-8b5c-bac581e815a8","path":"New Trello Yura.json","metaData":{}}
+files[] = {"id":"18096179-ed715b9b-b294-43a7-b2d1-80a8e23028c5","path":"New Trello Yura.json","metaData":{}}
 
 [relations.collections.metaData]
 
