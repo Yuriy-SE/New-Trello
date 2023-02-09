@@ -1,9 +1,64 @@
 {
 	"info": {
-		"_postman_id": "74bcd682-89fe-4f32-8b5c-bac581e815a8",
+		"_postman_id": "ed715b9b-b294-43a7-b2d1-80a8e23028c5",
 		"name": "New Trello Yura",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "18096179-74bcd682-89fe-4f32-8b5c-bac581e815a8"
+		"_uid": "18096179-ed715b9b-b294-43a7-b2d1-80a8e23028c5"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "Get all boards",
+			"id": "fc4ed14a-7202-42bb-bb3b-3ee80ee33a38",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key={{trelloKey}}&token={{trelloToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trelloKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trelloToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "955cf89f-f5c3-4afd-8ea1-8e2142944a42",
+			"key": "{{trelloKey}}",
+			"value": "a847250e16affee705757105918bab23"
+		},
+		{
+			"id": "e3efd108-9dbc-47bf-8c0c-4c18ddabc1c0",
+			"key": "trelloKey",
+			"value": "a847250e16affee705757105918bab23"
+		},
+		{
+			"id": "3257e97f-93d0-4e6c-b457-925c72358ae5",
+			"key": "trelloToken",
+			"value": "ATTA9047b76f517e52dbccdf835cefca2381b0c939b02b32f393adc5d91a82066f1f99CC12B7"
+		}
+	]
 }
