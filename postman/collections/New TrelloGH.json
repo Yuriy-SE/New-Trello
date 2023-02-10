@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "274ed40a-3098-479b-a16f-720cf85776cb",
+		"_postman_id": "6a8cfaee-ec3e-41e6-b7fd-5f898235ad48",
 		"name": "New Trello",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "18096179-274ed40a-3098-479b-a16f-720cf85776cb"
+		"_uid": "18096179-6a8cfaee-ec3e-41e6-b7fd-5f898235ad48"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "21787a87-3748-43d0-83f9-a306a01ba379",
+						"id": "eba0a5af-c6eb-4fa8-ad54-cbf586fe9e01",
 						"exec": [
 							"pm.test(\"Response time is less than 200ms\", function () {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
@@ -24,13 +24,15 @@
 							"\r",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"id": "1ce2a7f7-a510-4a8b-88bb-b819f0309ad5",
+			"id": "80ea3fb7-4273-4efa-b0a7-f10067464085",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
