@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "274ed40a-3098-479b-a16f-720cf85776cb",
+		"name": "New Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "18096179-274ed40a-3098-479b-a16f-720cf85776cb"
+	},
+	"item": [
+		{
+			"name": "Get all boards",
+			"id": "1ce2a7f7-a510-4a8b-88bb-b819f0309ad5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key={{trelloKey}}&token={{trelloToken}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trelloKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trelloToken}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "41f1c3a4-becc-425d-bcb1-97960ef1c295",
+			"key": "{{trelloKey}}",
+			"value": "a847250e16affee705757105918bab23"
+		},
+		{
+			"id": "e16ea4b9-f301-4c8c-a5d1-75cfad216a0a",
+			"key": "trelloKey",
+			"value": "a847250e16affee705757105918bab23"
+		},
+		{
+			"id": "5d230c81-a116-4e0d-a50a-80850ec81d36",
+			"key": "trelloToken",
+			"value": "ATTA9047b76f517e52dbccdf835cefca2381b0c939b02b32f393adc5d91a82066f1f99CC12B7"
+		}
+	]
+}
