@@ -8,6 +8,24 @@
 	"item": [
 		{
 			"name": "Get all boards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "21787a87-3748-43d0-83f9-a306a01ba379",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "1ce2a7f7-a510-4a8b-88bb-b819f0309ad5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
