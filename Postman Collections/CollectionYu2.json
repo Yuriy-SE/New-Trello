@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "ab3530f5-673b-48b3-b30d-0bcd80e452ad",
+		"name": "Collection Yu2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Tools",
+			"_postman_id": "d190f3ac-a8ca-43af-9ba1-b8df20810f08",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-tool-rental-api.glitch.me/tools/:toolid\n",
+					"protocol": "https",
+					"host": [
+						"simple-tool-rental-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"tools",
+						":toolid\n"
+					],
+					"variable": [
+						{
+							"key": "toolid\n",
+							"value": "1225",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
