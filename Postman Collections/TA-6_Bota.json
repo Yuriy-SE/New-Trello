@@ -7,7 +7,21 @@
 	"item": [
 		{
 			"name": "Postman Search",
-			"_postman_id": "19c23625-fb70-457f-88be-807e076d0772",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d770c898-9abd-4b6b-b9c1-1d3eefc8cd20",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "19c23625-fb70-457f-88be-807e076d0772",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -30,8 +44,7 @@
 						},
 						{
 							"key": "",
-							"value": "",
-							"type": "text"
+							"value": ""
 						}
 					]
 				}
