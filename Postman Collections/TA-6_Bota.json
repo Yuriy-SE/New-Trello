@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "9e858346-a9bc-4f34-b1b1-35e0fc4a57d3",
+		"name": "Google",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Postman Search",
+			"_postman_id": "19c23625-fb70-457f-88be-807e076d0772",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "google.com/search?q=postman&=",
+					"host": [
+						"google",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "postman"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
